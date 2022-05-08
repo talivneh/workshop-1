@@ -1,1 +1,2 @@
-# workshop-1
+# Welcome to Workshop 2
+## Registration form
