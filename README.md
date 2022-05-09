@@ -1,4 +1,4 @@
-# Welcome to Workshop 2
+# Welcome to Workshop 1
 ## Registration form
 ### The goal of this workshop to practice html & css skills. 
 Your taks is to create this kind of form. 
