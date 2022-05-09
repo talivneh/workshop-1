@@ -18,3 +18,5 @@ If input is invalid user should see proper message highlighting which field is i
 Don't forget about round corners of background white card and background in general<br />
 
 In general - don't be bounded by given design. You can improvise and make it deligtfull (hint hint: animations)
+
+**By end of workshop we will chose the best ones and present them at front of the class**
