@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 
+:root{
+    --orange: #e28743;
+    --darkBlue: #154c79;
+    --lightBlue: #abdbe3;
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Changa', sans-serif;
+    outline: none;
 }
 
 body{
-    height: 100vh;
+    display: flex;
+    height: 95vh;
+    align-items: center;
+    justify-content: center;
 }
 
 main{
@@ -15,18 +25,81 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
+    min-width: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--darkBlue);
+    box-shadow: 4px 4px 7px gray;
+}
+
+.form-headline{
+    color: var(--orange);
+    margin: 0;
 }
 
 .workshop-form{
     display: flex;
     flex-direction: column;
     align-items: space-around;
-    height: 60%;
     justify-content: space-around;
+    margin: 10px 0 20px 0;
 }
 
 .workshop-form > label{
+    color: #eeeee4;
     display: flex;
     flex-direction: column;
 }
+
+.workshop-form > label > input, .workshop-form > label > select{
+    border-radius: 5px;
+    border: none;
+    border: 2px solid transparent;
+}
+
+.workshop-form > label > input:focus, .workshop-form > label > select:focus{
+    border: 2px solid var(--orange);
+}
+
+.workshop-form > label:hover :nth-child(1){
+    animation: pulse;
+    animation-duration: 0.5s; 
+}
+
+.workshop-form input[type='checkbox']{
+    -webkit-appearance: none;
+    align-self: center;
+    border: 1px solid gray;
+    width: 15px;
+    height: 15px;
+    border-radius: 20%;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.workshop-form input[type='checkbox']:checked:after {
+	content: '\2714';
+	font-size: 18px;
+	color: var(--lightBlue);
+    position: absolute;
+    top: -10px;
+}
+
+.submit-button{
+    cursor: pointer;
+    background-color: var(--orange);
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 5px #063970;
+}
+
+.workshop-form > button:hover{
+    animation: heartBeat;
+    animation-duration: 1s; 
+    box-shadow: none;
+  }
+
+  .workshop-form > button:active{
+    box-shadow: none;
+  }
