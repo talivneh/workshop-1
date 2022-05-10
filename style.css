@@ -15,10 +15,15 @@ main{
     height: 100%;
 }
 
-form{
+.workshop-form{
     display: flex;
     flex-direction: column;
     align-items: space-around;
     height: 60%;
     justify-content: space-around;
+}
+
+.workshop-form > label{
+    display: flex;
+    flex-direction: column;
 }
