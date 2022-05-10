@@ -12,12 +12,12 @@
         <main>
             <h1 class="form-headline">HTML & CSS Form</h1>
             <form class="workshop-form">
-               <label>Full Name<input type="text" required/></label>
-               <label>Username<input type="text" required/></label>
-               <label>Password<input type="password" required/></label>
-               <label>Age<input type="number" min="0" required/></label>
-               <label>Email<input type="email" required/></label>
-               <label>Gender
+               <label>* Full Name<input type="text" required/></label>
+               <label>* Username<input type="text" required/></label>
+               <label>* Password<input type="password" required/></label>
+               <label>* Age<input type="number" min="0" required/></label>
+               <label>* Email<input type="email" required/></label>
+               <label>* Gender
                 <select required>
                    <option value="" disabled selected>Select your option</option>
                    <option>male</option>
@@ -25,9 +25,10 @@
                    <option>other</option>
                 </select>
                </label>
-               <label>Accept terms and conditions <input required type="checkbox"/></label>
+               <label>* Accept terms and conditions <input required type="checkbox"/></label>
                <button class="submit-button" type="submit">Submit</button>
              </form>
+             <span class="required-sign">* required</span>
          </main>
     </body>
 </html>
