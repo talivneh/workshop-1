@@ -13,9 +13,9 @@
             <h1 class="form-headline">HTML & CSS Form</h1>
             <form class="workshop-form">
                <label>* Full Name<input type="text" required/></label>
-               <label>* Username<input type="text" required/></label>
+               <label>* Username<input type="text" min="6" pattern="[A-Za-z]{6,}" title="min 6 characters, letters only, no spaces" required/></label>
                <label>* Password<input type="password" required/></label>
-               <label>* Age<input type="number" min="0" required/></label>
+               <label>* Age<input type="number" min="8" max="120" required/></label>
                <label>* Email<input type="email" required/></label>
                <label>* Gender
                 <select required>
